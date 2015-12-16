@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetShow</class>
+ <widget class="QDialog" name="SetShow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QDialog[objectName=&quot;SetShow&quot;]
+{background:transparent;
+ border-radius:10px;
+	background-image: url(:/ui/ui_new/bg_Frame.jpg);
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;helvetica&quot; light;
+background:transparent;
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>407</y>
+     <width>821</width>
+     <height>73</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/ui/Test_Cut/Test_Copyright.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/ui/ui_new/Up_Frame.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Time">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>31</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_date">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>11</y>
+     <width>81</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exit">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>413</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+	background-image: url(:/ui/Test_Cut/Test_Back.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+
+font-size:30px bold;
+	background-image: url(:/ui/Test_Cut/Test_Back_Pressed.png);
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>80</y>
+     <width>701</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame[objectName=&quot;frame&quot;]
+{
+background:transparent;
+border:none;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_TSW">
+    <property name="geometry">
+     <rect>
+      <x>419</x>
+      <y>266</y>
+      <width>77</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>触摸屏校正</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_TouchScreenCalibrate">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>174</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_up.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Time">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>39</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_up.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_CaliW">
+    <property name="geometry">
+     <rect>
+      <x>217</x>
+      <y>260</y>
+      <width>62</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>系统校正</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Calibrate">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>182</y>
+      <width>71</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-image: url(:/ui/System_Set/SysSet_sys_up.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TimeW">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>129</y>
+      <width>62</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>时间设置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_UserW">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>128</y>
+      <width>62</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>用户设置</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_UserSet">
+    <property name="geometry">
+     <rect>
+      <x>205</x>
+      <y>51</y>
+      <width>81</width>
+      <height>69</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+background-image: url(:/ui/System_Set/SysSet_user_up.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TimeSet">
+    <property name="geometry">
+     <rect>
+      <x>421</x>
+      <y>58</y>
+      <width>68</width>
+      <height>63</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-image: url(:/ui/System_Set/SysSet_time_up.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_TScreenSet">
+    <property name="geometry">
+     <rect>
+      <x>419</x>
+      <y>198</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-image: url(:/ui/System_Set/SysSet_touch_up.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_User">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>38</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_up.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Calibrate">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>170</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_up.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/System_Set/SysSet_ButtonBack_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>pushButton_TouchScreenCalibrate</zorder>
+   <zorder>pushButton_Time</zorder>
+   <zorder>label_TimeW</zorder>
+   <zorder>label_TimeSet</zorder>
+   <zorder>label_TScreenSet</zorder>
+   <zorder>pushButton_User</zorder>
+   <zorder>pushButton_Calibrate</zorder>
+   <zorder>label_UserW</zorder>
+   <zorder>label_CaliW</zorder>
+   <zorder>label_TSW</zorder>
+   <zorder>label_UserSet</zorder>
+   <zorder>label_Calibrate</zorder>
+  </widget>
+  <widget class="QLabel" name="Label_UserName">
+   <property name="geometry">
+    <rect>
+     <x>663</x>
+     <y>9</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_LogOut">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>4</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border:none;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_SoftWareVersion">
+   <property name="geometry">
+    <rect>
+     <x>686</x>
+     <y>30</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>V1.06</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

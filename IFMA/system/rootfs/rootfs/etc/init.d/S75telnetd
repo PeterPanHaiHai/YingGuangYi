@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [[ -x /usr/sbin/telnetd ]]; then
+	echo -n "Starting telnetd: "
+	/usr/sbin/telnetd -l /bin/login
+	if [[ "$?" -eq "0" ]]; then
+		echo "OK"
+	else
+		echo "Failed"
+	fi
+fi

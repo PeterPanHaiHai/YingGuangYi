@@ -1,0 +1,45 @@
+#! /bin/sh
+
+set -e
+
+DESC=webs
+BIN_PATH=/srv/webs/bin
+ARGS=
+NAME=${BIN_PATH}/${DESC}
+
+start() {
+     echo -n "Starting ${DESC}: "
+     cp /etc/umconfig.txt /tmp/
+     cd ${BIN_PATH}
+     ./${DESC} &
+     echo "OK"
+}
+
+stop() {
+    echo -n "Stopping ${DESC}: "
+    killall ${DESC}
+    echo "OK"
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+  start)
+    start
+	;;
+  stop)
+    stop
+	;;
+  restart|force-reload)
+    restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

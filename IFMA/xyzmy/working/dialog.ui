@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/ui/ui_new/bg_Frame.jpg);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_DeleteBackup">
+   <property name="geometry">
+    <rect>
+     <x>407</x>
+     <y>252</y>
+     <width>215</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/ui/dialog_button.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed {
+	background-image: url(:/ui/ui/dialog_pressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:!enabled{
+	background-image: url(:/ui/ui/dialog_button_gray.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_checkshow">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>82</y>
+     <width>215</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/ui/dialog_button.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed {
+	background-image: url(:/ui/ui/dialog_pressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_test">
+   <property name="geometry">
+    <rect>
+     <x>407</x>
+     <y>82</y>
+     <width>215</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/ui/dialog_button.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed {
+	background-image: url(:/ui/ui/dialog_pressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Set">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>252</y>
+     <width>215</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/ui/dialog_button.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed {
+	background-image: url(:/ui/ui/dialog_pressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:!enabled{
+	background-image: url(:/ui/ui/dialog_button_gray.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/ui/ui_new/Up_Frame.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_date">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Time">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>30</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>407</y>
+     <width>801</width>
+     <height>73</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/Test_Cut/Test_Copyright.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>212</x>
+     <y>90</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/ui/Dialog_TestW.png);
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>458</x>
+     <y>89</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/ui/Dialog_SearchW.png);
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>444</x>
+     <y>261</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/ui/Dialog_backupandDeletew.png);
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Test">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>131</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/ui_new/Test_in.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Search">
+   <property name="geometry">
+    <rect>
+     <x>474</x>
+     <y>125</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+background-image: url(:/ui/ui_new/Search_in.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Delete">
+   <property name="geometry">
+    <rect>
+     <x>461</x>
+     <y>304</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+  background:transparent;
+background-image: url(:/ui/ui_new/Delete_in.png);
+color:white;
+}
+
+QLabel:!enabled{
+  background:transparent;
+background-image: url(:/ui/ui_new/Delete_in_gray.png);
+color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_UserName">
+   <property name="geometry">
+    <rect>
+     <x>613</x>
+     <y>8</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>admin</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_LogOut">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>4</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border:none;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_SoftWareVersion">
+   <property name="geometry">
+    <rect>
+     <x>686</x>
+     <y>30</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>V1.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SET">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>290</y>
+     <width>131</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+  background:transparent;
+background-image: url(:/ui/ui_new/set_in.png);
+color:white;
+}
+
+QLabel:!enabled{
+  background:transparent;
+background-image: url(:/ui/ui_new/set_in_gray.png);
+color:white;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+background:transparent;
+background-image: url(:/ui/ui/Dialog_SystemSetW.png);
+color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

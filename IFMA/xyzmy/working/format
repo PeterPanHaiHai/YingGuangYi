@@ -1,0 +1,16 @@
+Main:
+QFont font2("helvetica",10);
+
+
+
+login:
+
+label_version_copyright:6pt light
+label:username:16pt
+Button:24pt;
+
+
+dialog:
+
+label_time:10 light light
+label_version_copyright:6pt light

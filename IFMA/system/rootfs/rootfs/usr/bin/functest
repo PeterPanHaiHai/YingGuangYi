@@ -1,0 +1,22 @@
+#!/bin/sh
+INSTALL="/srv/webtest/"
+if [ -f "/etc/functest.res" ];then
+   cd $INSTALL/bin
+    ./wr rm -fr /etc/functest.res
+   sync
+fi
+
+if [ -f "/etc/stable.todo" ];then
+   cd $INSTALL/bin
+   ./wr rm -fr /etc/stable.todo
+   sync
+fi
+
+if [ -d $INSTALL ];then
+   echo "Starting function test..."
+   cd $INSTALL/bin
+   ./webtest  -f
+else
+       echo "$INSTALL missing!"
+fi
+

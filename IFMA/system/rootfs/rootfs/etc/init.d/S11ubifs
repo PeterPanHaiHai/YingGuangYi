@@ -1,0 +1,24 @@
+#!/bin/sh
+#echo "mtd6"
+#exit 0
+
+mtd_num=6
+mtd=mtd${mtd_num}
+
+ubiattach /dev/ubi_ctrl -m ${mtd_num}
+mount -t ubifs -o sync ubi1:opt /opt
+if [[ "$?" -ne "0" ]]; then
+	# a reason for this error: this partition hasn't ubimkvol
+	ubidetach -m 6
+	flash_eraseall /dev/${mtd} > /dev/null 2>&1
+	ubiattach /dev/ubi_ctrl -m ${mtd_num}
+	ubimkvol /dev/ubi1 -N opt -m
+	mount -t ubifs -o sync ubi1:opt /opt
+	if [[ "$?" -ne "0" ]]; then
+		IP=`/usr/bin/eeprom net show ip`
+		NETMASK=`/usr/bin/eeprom net show netmask`
+		BR_IP=`/usr/bin/calc_bcast ${IP} ${NETMASK}`
+		BR_PORT=23923
+		/usr/bin/udp_bcast -c 10 -a ${BR_IP}:${BR_PORT} "[`date '+%F %T'`]mount opt failed!!\n"
+	fi
+fi

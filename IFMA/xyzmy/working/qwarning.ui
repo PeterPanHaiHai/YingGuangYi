@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QWarning</class>
+ <widget class="QDialog" name="QWarning">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>257</width>
+    <height>144</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog[objectName=&quot;QWarning&quot;]
+{
+background:transparent;
+
+background-image: url(:/ui/ui/Messagebox_Bg.png);
+border-radius:5px;
+border:none;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_warning">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>25</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+font-size:20px bold;
+
+color:black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_yes">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>99</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+
+background-image: url(:/ui/ui/Messagebox_yes.png);
+
+border-radius:10px;
+}
+
+
+QPushButton:pressed
+{
+	background-image: url(:/ui/ui/Messagebox_yes_Pressed.png);
+
+
+border-radius:10px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

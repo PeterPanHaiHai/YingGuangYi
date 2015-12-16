@@ -1,0 +1,43 @@
+#! /bin/sh
+
+set -e
+
+BIN=
+BIN_PATH=
+ARGS=
+NAME=${BIN_PATH}/${BIN}
+
+start() {
+     echo -n "Starting ${BIN}: "
+     ${NAME} ${ARGS} &
+     echo "OK"
+}
+
+stop() {
+    echo -n "Stopping ${BIN}: "
+    killall ${BIN}
+    echo "OK"
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+  start)
+    start
+	;;
+  stop)
+    stop
+	;;
+  restart|force-reload)
+    restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

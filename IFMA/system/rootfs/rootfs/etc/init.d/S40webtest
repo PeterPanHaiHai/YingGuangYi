@@ -1,0 +1,61 @@
+#!/bin/sh
+
+INSTALL="/srv/webtest/"
+DESC=webtest
+BIN_PATH=/srv/webtest/bin
+ARGS=
+NAME=${BIN_PATH}/${DESC}
+
+do_service() {
+    if [ ! -f "/etc/functest.res" ];then
+       if [ -d "$INSTALL" ];then
+           cd $INSTALL/bin
+           ./webtest -f &
+           return 
+       fi
+    fi
+    #launch stable-test
+    if [ -f "/etc/stable.todo" ];then
+        STABLEIP=`cat /etc/stable.todo | awk '{print $1}'`
+        if [ -d "$INSTALL" ];then
+            ifconfig eth0 $STABLEIP
+            cd $INSTALL/bin
+            ./webtest -s &
+            return
+        fi
+    fi
+}
+
+start() {
+     echo -n "Starting ${DESC}: "
+     do_service
+     echo "OK"
+}
+
+stop() {
+    echo -n "Stopping ${DESC}: "
+    killall ${DESC}
+}
+
+restart() {
+    stop
+    start
+}
+
+case "$1" in
+  start)
+    start
+	;;
+  stop)
+    stop
+	;;
+  restart|force-reload)
+    restart
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

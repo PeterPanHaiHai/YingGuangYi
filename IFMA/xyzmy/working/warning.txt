@@ -1,0 +1,4 @@
+1:add a button on countdown ui,press this button,linear go in
+2:add a repeat button,press this button,linear did not go out,just check
+3:just let the operator easily
+4:have no need to enter the patient's name

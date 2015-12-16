@@ -1,0 +1,4 @@
+"I2C.obj",
+"main.obj" 
+TO "yingguangyi" 
+RAMSIZE(256) 

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackUpandDelete</class>
+ <widget class="QDialog" name="BackUpandDelete">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog[objectName=&quot;BackUpandDelete&quot;]
+{
+background-image: url(:/ui/ui_new/bg_Frame.jpg);
+
+
+}</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_BackUp">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>221</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-image: url(:ui/icon/BackUpRecord_up.png);
+
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/icon/BackUpRecord_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Delete">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>150</y>
+     <width>221</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-image: url(:ui/icon/DeleteRecord_up.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+QPushButton:pressed{
+	background-image: url(:/ui/icon/DeleteRecord_down.png);
+font-size:30px bold;
+
+border-radius:20px;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exit">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>417</y>
+     <width>81</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+	background-image: url(:/ui/Test_Cut/Test_Back.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+
+font-size:30px bold;
+	background-image: url(:/ui/Test_Cut/Test_Back_Pressed.png);
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Time">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>31</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/ui/ui_new/Up_Frame.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_date">
+   <property name="geometry">
+    <rect>
+     <x>86</x>
+     <y>11</y>
+     <width>101</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>407</y>
+     <width>821</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/ui/Test_Cut/Test_Copyright.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_UserName">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>10</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_LogOut">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>4</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+border:none;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_SoftWareVersion">
+   <property name="geometry">
+    <rect>
+     <x>686</x>
+     <y>30</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:transparent;
+color:white;
+
+</string>
+   </property>
+   <property name="text">
+    <string>V1.06</string>
+   </property>
+  </widget>
+  <zorder>pushButton_BackUp</zorder>
+  <zorder>pushButton_Delete</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_date</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton_Exit</zorder>
+  <zorder>label_Time</zorder>
+  <zorder>Label_UserName</zorder>
+  <zorder>pushButton_LogOut</zorder>
+  <zorder>Label_SoftWareVersion</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

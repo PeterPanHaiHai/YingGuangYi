@@ -1,0 +1,8 @@
+UBI logical erase block size  0x1F800
+UBI minimum I/O size 0x800
+Maximum LEB count 512
+UBI phyisical erase block size  0x20000
+UBI sub-page size  512
+
+mkdir rootfs
+sudo tar xvf rootfs.tar -C rootfs

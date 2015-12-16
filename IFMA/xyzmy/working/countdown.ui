@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CountDown</class>
+ <widget class="QDialog" name="CountDown">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog[objectName=&quot;CountDown&quot;]
+{
+background:transparent;
+background-color:transparent;
+	border-image: url(:/ui/ui/Messagebox_Bg.png);
+border-radius:5px;
+border:none;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_warning">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>10</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Please insert cassete ...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>331</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+font: 12pt &quot;helvetica&quot; bold;
+background:transparent;
+</string>
+   </property>
+   <property name="text">
+    <string>Door will be closed in</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Seconds">
+   <property name="geometry">
+    <rect>
+     <x>314</x>
+     <y>12</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+font: 24pt &quot;helvetica&quot; bold;
+background:transparent;
+color: rgb(255, 0, 4);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>40</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+font: 12pt &quot;helvetica&quot; bold;
+background:transparent;
+</string>
+   </property>
+   <property name="text">
+    <string>seconds</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>161</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/pictures/rectButton.png);
+
+
+font: 24pt &quot;helvetica&quot; bold;
+
+border-radius:20px;
+</string>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

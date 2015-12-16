@@ -1,0 +1,5 @@
+#!/bin/sh
+chmod 777 xyz
+cd /root/Desktop/OutPut
+touch power
+./xyz

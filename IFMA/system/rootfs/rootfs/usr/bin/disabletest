@@ -1,0 +1,6 @@
+#!/bin/sh
+INSTALL="/srv/webtest/"
+cd ${INSTALL}/bin
+./wr touch /etc/functest.res
+./wr rm -fr /etc/stable.todo
+sync

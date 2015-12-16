@@ -1,0 +1,9 @@
+#!/bin/sh
+INSTALL="/srv/webtest/"
+if [ -d "$INSTALL" ];then
+   cd $INSTALL/bin
+   ./webstest -s 
+else 
+   echo "$INSTALL missing!"
+fi
+

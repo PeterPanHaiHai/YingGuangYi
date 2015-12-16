@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/srv/webs/web/cgi-bin/wr cp /srv/webs/web/um/umconfig.txt /etc/
+sync

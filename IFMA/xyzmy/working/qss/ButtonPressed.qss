@@ -1,0 +1,8 @@
+
+
+QPushButton:pressed{
+	border-image: url(:/ui/Keyboard/WordCut_Pressed.png);
+        border-radius:1px;
+}
+
+

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calibrate_Six</class>
+ <widget class="QDialog" name="Calibrate_Six">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>660</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background:transparent;
+
+background-color:transparent;
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Save">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>225</y>
+     <width>155</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/Calibrate/save.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+	background-image: url(:/ui/Calibrate/SAvepressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>7</y>
+     <width>642</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame[objectName=&quot;frame&quot;]
+{background:transparent;
+ border-radius:10px;
+	background-image: url(:/keyboard/ui/Calibrate/calibrate_bg.png);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>10</y>
+      <width>92</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/ui/Calibrate/calibrate_project.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_project">
+    <property name="geometry">
+     <rect>
+      <x>311</x>
+      <y>16</y>
+      <width>85</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox[objectName=&quot;comboBox_project&quot;]
+{
+
+background-color:white;
+}</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Cassette">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>86</y>
+      <width>186</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox[objectName=&quot;comboBox_Cassette&quot;]
+{
+
+background-color:white;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1号校正纸条</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2号校正纸条</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3号校正纸条</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_out">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>125</y>
+      <width>106</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-image: url(:/ui/Calibrate/Out.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+	background-image: url(:/ui/Calibrate/Out_Pressed.png);
+font-size:30px bold;
+
+border-radius:20px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calibrate">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>123</y>
+      <width>114</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-image: url(:/ui/Calibrate/Calibrate.png);
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+	background-image: url(:/ui/Calibrate/Calibrate_pressed.png);
+
+
+border-radius:20px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>336</x>
+      <y>86</y>
+      <width>210</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/ui/Calibrate/StandValue.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>336</x>
+      <y>146</y>
+      <width>210</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/ui/Calibrate/RealValue.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_StandardValue">
+    <property name="geometry">
+     <rect>
+      <x>421</x>
+      <y>94</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+border-radius:10px;
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_RealValue">
+    <property name="geometry">
+     <rect>
+      <x>421</x>
+      <y>154</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:transparent;
+border-radius:10px;
+</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>229</y>
+     <width>155</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-image: url(:/ui/Calibrate/quit.png);
+
+border-radius:20px;
+}
+
+
+QPushButton:pressed{
+	background-image: url(:/ui/Calibrate/quit_pressed.png);
+
+
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

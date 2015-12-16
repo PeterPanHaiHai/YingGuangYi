@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# Start the network....
+#
+
+case "$1" in
+  start)
+ 	echo "Starting network..."
+	/sbin/ifup -a
+	IP=`eeprom net show ip`
+	NETMASK=`eeprom net show netmask`
+	if [[ "${IP}" == "0.0.0.0" ]]; then
+		IP="192.168.1.136"
+	fi
+	if [[ "${NETMASK}" = "0.0.0.0" ]]; then
+		NETMASK="255.255.255.0"
+	fi
+	ifconfig eth0 ${IP} netmask ${NETMASK}
+	if [[ ${?} -ne 0 ]]; then
+		ifconfig eth0 "192.168.1.136" netmask 255.255.255.0
+	fi
+	DNS=`eeprom net show dns`
+	if [[ "${DNS}" != "0.0.0.0" ]]; then
+		echo "nameserver ${DNS}" >> /etc/resolv.conf
+	fi
+	;;
+  stop)
+	echo -n "Stopping network..."
+	/sbin/ifdown -a
+	;;
+  restart|reload)
+	"$0" stop
+	"$0" start
+	;;
+  *)
+	echo $"Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
+
